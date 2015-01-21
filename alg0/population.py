@@ -13,5 +13,11 @@ class Population:
         for i in xrange(size):
             self.pop.append(Individual.random_ind())
 
+    def __str__(self):
+        result = ""
+        for i, ind in enumerate(self.pop):
+            result += str(i)+";"+str(ind)
+        return result
+
     def __repr__(self):
         return self.__str__()
