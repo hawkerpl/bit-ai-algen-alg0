@@ -1,6 +1,6 @@
 __author__ = 'hawker'
 
-from src.alg0.individual import Individual
+from individual import Individual
 
 
 class Population:
