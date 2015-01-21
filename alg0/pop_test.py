@@ -35,7 +35,6 @@ class MyTestCase(unittest.TestCase):
         pop1.breed()
         self.assertEqual(len(pop1.pop), 4)
         self.assertEqual(pop1.selected, [])
-        self.assertEqual(pop1.selected_indexes, [])
         self.assertEqual(pop1.fitness_table, [])
 
     def test_evolve(self):
@@ -43,7 +42,6 @@ class MyTestCase(unittest.TestCase):
         pop1.evolve()
         self.assertEqual(len(pop1.pop), 4)
         self.assertEqual(pop1.selected, [])
-        self.assertEqual(pop1.selected_indexes, [])
         self.assertEqual(pop1.fitness_table, [])
 
 
