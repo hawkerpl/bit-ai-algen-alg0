@@ -9,11 +9,6 @@ class Individual(object):
         self.genome = genome
         self.fitness = 100000
 
-    def count_fitness(self):
-        x = int(self.genome, 2)
-        self.fitness = 2*(x-567)**2
-        return self.fitness
-
     @staticmethod
     def random_ind(genome_length = 10):
         genome = ''.join([random.choice("01") for _ in xrange(genome_length)])
@@ -32,15 +27,6 @@ class Individual(object):
     @staticmethod
     def decide_if_mutate():
         return Individual.mutation_factor <= random.randint(0, 100)
-
-    def breed_with(self, another_ind):
-        child1_genome, child2_genome = tools.binary_crossover_from_string(self.genome, another_ind.genome)
-        child1 = Individual(child1_genome)
-        child2 = Individual(child2_genome)
-        child1.mutate_random_gene()
-        child2.mutate_random_gene()
-        return child1, child2
-
 
 
     def __str__(self):
