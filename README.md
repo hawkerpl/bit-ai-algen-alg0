@@ -52,3 +52,23 @@ Jeżeli tak się dzieje możesz się pobawić w inny sposób:
 
 ###Pytania i odpowiedzi:
 Pytania mozesz zadawac na tym repo, przez mojego uzytkownika znajdziesz rowniez kontakt do mnie.
+
+
+#### Quick guide gita
+wchodzim do jakiegokolwiek katalogu, 
+robimy
+```
+git clone https://github.com/hawkerpl/bit-ai-algen-alg0.git
+```
+wchodzimy do brancha:
+```
+git checkout lev0
+```
+stwierdzilismy ze costam zrobilismy i przechodzimy do innego brancha wiec
+zapisujemy to oco zrobilismy
+```
+git add . 
+git commit -m "wiadomosc"
+```
+i przechodzimy 
+`git checkout lev0`
